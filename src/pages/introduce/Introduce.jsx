@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Introduce.css"
 import Dropdown from '../../components/dropdown/Dropdown'
 import { useNavigate } from 'react-router-dom'
-
+import logo from "../../images/logo.jpg"
 const Introduce = () => {
 
   const difficulty = ["easy", "medium" , "hard"]
@@ -21,7 +21,7 @@ const Introduce = () => {
     <div className='introduce'>
       <div className="introduce-container">
         <img 
-        src='https://st2.depositphotos.com/7752738/11219/v/950/depositphotos_112195158-stock-illustration-quiz-logo-poll-questionnaire-vector.jpg'        alt="" />
+        src={logo}       alt="" />
         <Dropdown data = {difficulty} setDifficultyChange={setDifficultyChange} />
         <div onClick={startQuiz} className="introduce-btn">Quiz'e Başla !</div>
       </div>
