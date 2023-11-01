@@ -1,0 +1,13 @@
+.dropdown{
+
+}
+
+.dropdown select{
+    width: 200px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 10px; 
+    font-size: 1rem;
+    
+}
+
