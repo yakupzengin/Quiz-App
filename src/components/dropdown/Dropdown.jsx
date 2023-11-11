@@ -8,7 +8,7 @@ const Dropdown = ({data , setDifficultyChange}) => {
         <select onChange={e => setDifficultyChange(e.target.value)} name="" id="">
             {
                 data.map((dt , i ) => (
-                    <option value={dt}>{dt}</option>
+                    <option key={i} value={dt}>{dt}</option>
                 ))
             }
         </select>

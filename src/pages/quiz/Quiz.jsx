@@ -7,11 +7,13 @@ import Modal from '../../components/modal/Modal'
 
 const Quiz = () => {
   
-  const {difficulty, amount } = useParams()
+  const {difficulty, amount } = useParams();
+
   const [questionsData , setQuestionsData] = useState([]);
   const [score,setScore] = useState(0);
   const [count, setCount ] = useState(0);
   const [modal, setModal ] = useState(false);
+
   useEffect( () => {
 
     const getData = async() => {
@@ -22,7 +24,6 @@ const Quiz = () => {
     getData();
   },[])
 
-  console.log(questionsData , "questionsData ");
 
   return (
     <div className='quiz'>

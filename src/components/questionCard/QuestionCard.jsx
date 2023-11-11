@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./QuestionCard.css"
 
-
-
 const QuestionCard = ({questionsData,score,setScore,count,setCount,modal,setModal}) => {
     const [timer, setTimer] = useState(30);
 
