@@ -23,11 +23,11 @@ const Introduce = () => {
         <img src={logo} alt="" />
         
         <div >
-          <h1>Quiz Uygulaması</h1>
-          <p>Seviyeyi seç ve başla! Her soru 10 puan değerindedir.</p>
+          <h1>Quiz Application</h1>
+          <p>Choose the level and get started! Each question is worth 10 points.</p>
           <Dropdown data={difficulty} setDifficultyChange={setDifficultyChange} />
           <div onClick={startQuiz} className="introduce-btn">
-            Quiz'e Başla !
+          Start Quiz!
           </div>
         
         </div>

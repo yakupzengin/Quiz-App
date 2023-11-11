@@ -31,7 +31,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, setModa
       if (timer === 0 && count < 10) {
         setCount(count + 1);
         setTimer(30);
-      } else if (count >= 10) {
+      } else if (count > 9) {
         setModal(true);
       }
     }, 1000);
@@ -45,7 +45,9 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, setModa
     <div className='questionCard-container'>
       <div className='questionCard'>
         <div className="questionCard-timer">{timer}</div>
-        <div className='questionCard-title'>{count + 1}/10 - {questionsData[count]?.question}</div>
+        <div className='questionCard-title'>
+           {count +1}/10 {questionsData[count]?.question}  
+            </div>
         
         {questionsData[count]?.answers?.map((answer, i) => (
           <button
