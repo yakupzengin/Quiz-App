@@ -31,6 +31,7 @@ const Quiz = () => {
       {
         modal ? <Modal score={score} /> :
       <QuestionCard
+      difficulty={difficulty}
       questionsData = {questionsData}
       score = {score}
       setScore = {setScore}

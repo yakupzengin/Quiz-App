@@ -1,0 +1,30 @@
+.optical-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+  }
+  
+  .quiz-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .answer-sheet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .answer {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  
