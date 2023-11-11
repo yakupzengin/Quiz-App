@@ -29,6 +29,8 @@
 .introduce-container img{
     width:300px ;
     margin-bottom: 1rem; 
+    margin-top: 2.3rem;
+    border-radius: 10px;
 }
 .introduce h1{
     font-size: 30px;
